@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Basic Soccer School 24 Cafe</h1>
+      <p id="description">
+        Formulir Pendaftaran BSS 24 Cafe Tahun Ajaran 2021/2022
+      </p>
+    </header>
+    <div class="form-container">
+      <form action="#" id="survey-form">
+        <div class="input-group">
+          <label id="name-label" for="name">Nama Lengkap :</label>
+          <br />
+          <input
+            type="name"
+            id="name"
+            name="name"
+            placeholder="Masukan Nama"
+            required
+          />
+        </div>
+        <br />
+        <div class="input-group">
+          <label id="email-label" for="email">E-Mail :</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Masukan Email"
+            required
+          />
+        </div>
+        <br />
+        <div class="input-group">
+          <label id="number-label" for="number">Umur :</label>
+          <br />
+          <input
+            type="number"
+            id="number"
+            name="number"
+            placeholder="Masukan Umur"
+            required
+            min="8"
+            max="16"
+          />
+        </div>
+        <br />
+        <div class="input-group">
+          <label for="size">Ukuran Baju :</label>
+          <br />
+          <select name="dropdown" id="dropdown">
+            <option selected disabled value="pilih ukuran baju">
+              Pilih Ukuran Baju
+            </option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+          </select>
+        </div>
+        <br />
+        <div class="input-group">
+          <label for="kelas">Kelas :</label>
+          <br />
+          <label for="kelas">
+            <input name="kelas" type="radio" value="Kelas A (8-11 Tahun)" />
+            Kelas A (8-11 Tahun)
+          </label>
+          <br />
+          <label for="kelas">
+            <input name="kelas" type="radio" value="Kelas B (12-13 Tahun)" />
+            Kelas B (12-13 Tahun)
+          </label>
+          <br />
+          <label for="kelas">
+            <input name="kelas" type="radio" value="Kelas C (14-16 Tahun)" />
+            Kelas C (14-16 Tahun)
+          </label>
+        </div>
+        <br />
+        <div class="input-group">
+          <label for="posisi">Posisi Bermain :</label>
+          <br />
+          <label>
+            <input type="checkbox" value="kiper" />
+            Kiper
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" value="Bek" />
+            Bek
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" value="gelandang" />
+            Gelandang
+          </label>
+          <br />
+          <label>
+            <input type="checkbox" value="penyerang" />
+            Penyerang
+          </label>
+        </div>
+        <br />
+        <div class="input-group">
+          <label for="dsc">Ceritakan diri anda</label>
+          <br />
+          <textarea name="dsc" id="dsc"></textarea>
+        </div>
+        <button type="submit" id="submit">Kirim</button>
+      </form>
+    </div>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
